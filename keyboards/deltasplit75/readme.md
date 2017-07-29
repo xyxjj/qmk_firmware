@@ -11,27 +11,38 @@ based boards.
 ## Case Files
 Files are available here: https://github.com/xyxjj/DeltaSplit75-Case-files
 
+## Build Guide
+The build guide should be found at https://qmk.fm/deltasplit75
+
 
 ## First Time Setup
 
-Download or clone the whole firmware and navigate to the keyboards/DeltaSplit75 directory. Once your dev env is setup, you'll be able to generate the default .hex using:
+Download or clone the whole firmware and navigate to the keyboards/deltasplit75 directory. Once your dev env is setup, you'll be able to generate the .hex using:
 
 ```
-make V2
+make v2
 
 or
 
-make ProtoSplit-ProtoSplit (if you have one of the prototype PCBs)
+make v2-YOUR_KEYMAP_NAME (if you make a folder for your keymap)
+
+or
+
+make protosplit (if you have one of the prototype PCBs)
 ```
 
 You will see a lot of output and if everything worked correctly you will see the built hex files:
 
 ```
-DeltaSplit75_ProtoSplit_ProtoSplit.hex
+deltasplit75_v2_protosplit.hex 
 
 or
 
-DeltaSplit75_V2_Default.hex
+deltasplit74_v2_YOUR_KEYMAP_NAME.hex
+
+or
+
+deltasplit75_v2_default.hex
 
 ```
 
@@ -39,7 +50,7 @@ DeltaSplit75_V2_Default.hex
 For more information on customizing keymaps, take a look at the primary documentation for [Customizing Your Keymap](/readme.md##customizing-your-keymap) in the main readme.md.
 
 ### DeltaSplit75 V2
-The PCBs available in groupbuy are all v2, if you've bought one of my prototype PCBs (it says DeltaSplit65 on the silkscreen instead of 75), use the code make ProtoSplit-ProtoSplit instead
+The PCBs available in groupbuy are all v2, if you've bought one of my prototype PCBs (it says DeltaSplit65 on the silkscreen instead of 75), use the code make protosplit instead
 
 Features
 --------
